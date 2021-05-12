@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="all.css" />
+    <title>買到剁手手</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light pt-1">
+      <div class="container-fluid">
+        <h1 class="h2 fw-bold"><a class="navbar-brand" href="#">血拚買買買</a></h1>
+
+        <div class="dropdown">
+          <a
+            href="#"
+            class="text-dark position-relative dropdown-toggle text-transparent"
+            id="dropdownMenuOffset"
+            data-bs-toggle="dropdown"
+            data-display="static"
+            aria-expanded="false"
+          >
+            <i class="fas fa-shopping-cart fa-2x text-dark"></i>
+            <span class="badge bg-danger rounded-pill position-absolute border-light" style="top: -80%; right: 10%"
+              >4</span
+            >
+          </a>
+          <div
+            class="dropdown-menu dropdown-menu-end p-3"
+            aria-labelledby="dropdownMenuOffset"
+            style="min-width: 250px"
+          >
+            <p class="fw-bold">已選擇商品</p>
+            <table class="mb-3 table table-sm small">
+              <tr class="border-top border-botton">
+                <td>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#removeModal" data-title="金牌西裝"
+                    ><i class="fas fa-trash text-secondary"></i
+                  ></a>
+                </td>
+                <td style="width: 100px">金牌西裝</td>
+                <td>1件</td>
+                <td>$525</td>
+              </tr>
+              <tr class="border-top border-botton">
+                <td>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#removeModal" data-title="金牌西裝"
+                    ><i class="fas fa-trash text-secondary"></i
+                  ></a>
+                </td>
+                <td>金牌西裝</td>
+                <td>1件</td>
+                <td>$525</td>
+              </tr>
+            </table>
+            <div class="d-grid">
+              <a href="checkout.html" class="btn btn-primary btn-sm"><i class="fas fa-shopping-cart"></i> 結帳去</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- content -->
+    <div class="container-fluid mb-4">
+      <div class="row bg-banner justify-content-center align-items-center">
+        <div class="col-9 px-5 py-4 bg-lighter text-light">
+          <h2 class="display-4">買到剁手手！</h2>
+          <h3 class="h4 d-md-block d-none">
+            This is a modified jumbotron that occupies the entire horizontal space of its parent.
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-4">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="list-group sticky-top small" style="top: 10px">
+            <a
+              href="#list-brandOnly"
+              class="p-3 list-group-item list-group-item-action active"
+              aria-current="true"
+              data-bs-toggle="list"
+              ><i class="fas fa-medal me-3"></i>金牌專賣店
+            </a>
+            <a href="#list-gift" class="p-3 list-group-item list-group-item-action" data-bs-toggle="list"
+              ><i class="fas fa-gift me-3"></i>禮品區</a
+            >
+            <a href="#list-video" class="p-3 list-group-item list-group-item-action" data-bs-toggle="list"
+              ><i class="fas fa-video me-3"></i>影音用品</a
+            >
+            <a href="#list-pet" class="p-3 list-group-item list-group-item-action" data-bs-toggle="list"
+              ><i class="fas fa-paw me-3"></i>寵物用品</a
+            >
+            <a href="#list-house" class="p-3 list-group-item list-group-item-action" data-bs-toggle="list"
+              ><i class="fas fa-home me-3"></i>居家環境</a
+            >
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="input-group mb-3 mt-3 mt-md-0">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <button class="btn btn-secondary" type="button"><i class="fas fa-search"></i> Search</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-brandOnly" role="tabpanel" aria-labelledby="list-home-list">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100 text-center shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1600379569881-850229c45dbb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHN1aXR8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">金牌西裝</h5>
+                      <p class="card-text">
+                        This is a wider card with supporting text below as a natural lead-in to additional content. This
+                        content is a little bit longer.
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-secondary">L</button>
+                        <button type="button" class="btn btn-outline-secondary">XL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 text-center shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1571771894757-a876156c79d4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">金牌西裝</h5>
+                      <p class="card-text">
+                        This is a wider card with suppcontent. This content is a little bit longer.
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-secondary">L</button>
+                        <button type="button" class="btn btn-outline-secondary">XL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 text-center shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1611003656331-0dac8283bbb9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHN1aXR8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">金牌西裝</h5>
+                      <p class="card-text">
+                        This is a wider card with supporting text below as a natural lead-in to additional content. This
+                        content is a little bit longer.
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-secondary">L</button>
+                        <button type="button" class="btn btn-outline-secondary">XL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 text-center shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1580684518721-3d7c2af77e5a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHN1aXR8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">金牌西裝</h5>
+                      <p class="card-text">
+                        This is a wider card with supporting text below as a natural lead-in to additional content. This
+                        content is a little bit longer.
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-secondary">L</button>
+                        <button type="button" class="btn btn-outline-secondary">XL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 text-center shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1517015901815-ad0932fb389e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHN1aXR8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">金牌西裝</h5>
+                      <p class="card-text">
+                        This is a wider card with supporting text below as a natural lead-in to additional content. This
+                        content is a little bit longer.
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-secondary">L</button>
+                        <button type="button" class="btn btn-outline-secondary">XL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 text-center shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1489370603040-dc6c28a1d37a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHN1aXR8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">金牌西裝</h5>
+                      <p class="card-text">
+                        This is a wider card with supporting text below as a natural lead-in to additional content. This
+                        content is a little bit longer.
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-secondary">L</button>
+                        <button type="button" class="btn btn-outline-secondary">XL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 text-center shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1529635229076-82fefed713c4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">金牌西裝</h5>
+                      <p class="card-text">
+                        This is a wider card with supportingt. This content is a little bit longer.
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-secondary">L</button>
+                        <button type="button" class="btn btn-outline-secondary">XL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 text-center shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1515736076039-a3ca66043b27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">金牌西裝</h5>
+                      <p class="card-text">
+                        This is a wider card with supporting text belnt. This content is a little bit longer.
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-secondary">L</button>
+                        <button type="button" class="btn btn-outline-secondary">XL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 text-center shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1490367532201-b9bc1dc483f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">金牌西裝</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural</p>
+                    </div>
+
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-secondary">L</button>
+                        <button type="button" class="btn btn-outline-secondary">XL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="list-gift" role="tabpanel" aria-labelledby="list-profile-list">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100 text-center shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1491336477066-31156b5e4f35?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">金牌西裝</h5>
+                      <p class="card-text">
+                        This is a wider card with supporting text below as a natural lead-in to additional content. This
+                        content is a little bit longer.
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-secondary">L</button>
+                        <button type="button" class="btn btn-outline-secondary">XL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card h-100 text-center shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1529635229076-82fefed713c4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">金牌西裝</h5>
+                      <p class="card-text">
+                        This is a wider card with supportingt. This content is a little bit longer.
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-secondary">L</button>
+                        <button type="button" class="btn btn-outline-secondary">XL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 text-center shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1515736076039-a3ca66043b27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">金牌西裝</h5>
+                      <p class="card-text">
+                        This is a wider card with supporting text belnt. This content is a little bit longer.
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-secondary">L</button>
+                        <button type="button" class="btn btn-outline-secondary">XL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 text-center shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1490367532201-b9bc1dc483f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">金牌西裝</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural</p>
+                    </div>
+
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-secondary">L</button>
+                        <button type="button" class="btn btn-outline-secondary">XL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="list-video" role="tabpanel" aria-labelledby="list-messages-list">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100 text-center shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1491336477066-31156b5e4f35?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">金牌西裝</h5>
+                      <p class="card-text">
+                        This is a wider card with supporting text below as a natural lead-in to additional content. This
+                        content is a little bit longer.
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-secondary">L</button>
+                        <button type="button" class="btn btn-outline-secondary">XL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 text-center shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1571771894757-a876156c79d4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">金牌西裝</h5>
+                      <p class="card-text">
+                        This is a wider card with suppcontent. This content is a little bit longer.
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-secondary">L</button>
+                        <button type="button" class="btn btn-outline-secondary">XL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 text-center shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1515736076039-a3ca66043b27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">金牌西裝</h5>
+                      <p class="card-text">
+                        This is a wider card with supporting text belnt. This content is a little bit longer.
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-secondary">L</button>
+                        <button type="button" class="btn btn-outline-secondary">XL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 text-center shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1490367532201-b9bc1dc483f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">金牌西裝</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural</p>
+                    </div>
+
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-secondary">L</button>
+                        <button type="button" class="btn btn-outline-secondary">XL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="list-pet" role="tabpanel" aria-labelledby="list-settings-list">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100 text-center shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1491336477066-31156b5e4f35?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">金牌西裝</h5>
+                      <p class="card-text">
+                        This is a wider card with supporting text below as a natural lead-in to additional content. This
+                        content is a little bit longer.
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-secondary">L</button>
+                        <button type="button" class="btn btn-outline-secondary">XL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 text-center shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1571771894757-a876156c79d4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">金牌西裝</h5>
+                      <p class="card-text">
+                        This is a wider card with suppcontent. This content is a little bit longer.
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-secondary">L</button>
+                        <button type="button" class="btn btn-outline-secondary">XL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 text-center shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1529635229076-82fefed713c4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">金牌西裝</h5>
+                      <p class="card-text">
+                        This is a wider card with supportingt. This content is a little bit longer.
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-secondary">L</button>
+                        <button type="button" class="btn btn-outline-secondary">XL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 text-center shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1515736076039-a3ca66043b27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">金牌西裝</h5>
+                      <p class="card-text">
+                        This is a wider card with supporting text belnt. This content is a little bit longer.
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-secondary">L</button>
+                        <button type="button" class="btn btn-outline-secondary">XL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 text-center shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1490367532201-b9bc1dc483f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">金牌西裝</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural</p>
+                    </div>
+
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-secondary">L</button>
+                        <button type="button" class="btn btn-outline-secondary">XL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="list-house" role="tabpanel" aria-labelledby="list-settings-list">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100 text-center shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1491336477066-31156b5e4f35?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">金牌西裝</h5>
+                      <p class="card-text">
+                        This is a wider card with supporting text below as a natural lead-in to additional content. This
+                        content is a little bit longer.
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-secondary">L</button>
+                        <button type="button" class="btn btn-outline-secondary">XL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 text-center shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1571771894757-a876156c79d4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">金牌西裝</h5>
+                      <p class="card-text">
+                        This is a wider card with suppcontent. This content is a little bit longer.
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-secondary">L</button>
+                        <button type="button" class="btn btn-outline-secondary">XL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 text-center shadow-sm">
+                    <img
+                      src="https://images.unsplash.com/photo-1529635229076-82fefed713c4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">金牌西裝</h5>
+                      <p class="card-text">
+                        This is a wider card with supportingt. This content is a little bit longer.
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 mb-2">
+                      <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-outline-secondary">S</button>
+                        <button type="button" class="btn btn-outline-secondary">M</button>
+                        <button type="button" class="btn btn-outline-secondary">L</button>
+                        <button type="button" class="btn btn-outline-secondary">XL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- content -->
+    <footer class="bg-light py-4 text-center">
+      <span>© Copright 2021 血拚買買買</span>
+      <ul class="list-inline d-inline-block ps-4">
+        <li class="list-inline-item">
+          <a class="text-decoration-none" href="#"><i class="fab fa-facebook-square"></i> Facebook</a>
+        </li>
+        <li class="list-inline-item">
+          <a class="text-decoration-none" href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        </li>
+        <li class="list-inline-item">
+          <a class="text-decoration-none" href="#"><i class="fas fa-home"></i> About</a>
+        </li>
+      </ul>
+      <p>Made with Bootstrap5</p>
+    </footer>
+    <!-- remove Modal start -->
+    <div class="modal fade" id="removeModal" tabindex="-1" aria-labelledby="removeModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-danger text-light">
+            <h5 class="modal-title" id="exampleModalLabel">確定刪除 商品 ?</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">是否確認刪除商品</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-danger px-4">確定刪除</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- remove Modal end -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="all.js"></script>
+  </body>
+</html>
